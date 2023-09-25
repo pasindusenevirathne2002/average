@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <title>If statement</title>
+    </head>
+
+    <body>
+        <form>
+            <b>Average:</b><input type="text" id="avg" onkeyup="result()"><br><br>
+            <b>Result</b><p id="ans"></p>
+        </form>
+
+    </body>
+
+        <script type="text/javascript">
+
+            function result(){
+
+                var avg=document.getElementById("avg").value;
+
+                if (avg>=35){
+                    document.getElementById("ans").innerHTML="Pass";
+                       
+                } else {
+                    document.getElementById("ans").innerHTML="Fail";
+                    
+                }
+
+            }
+        </script>
+		
+</html>
